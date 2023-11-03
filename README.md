@@ -1,10 +1,9 @@
-# Laravel Laravel Service.txt Package
+# Laravel Service Package (Command and Stubs)
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/sergeybruhin/laravel-service.svg?style=flat-square)](https://packagist.org/packages/sergeybruhin/laravel-service)
 [![Total Downloads](https://img.shields.io/packagist/dt/sergeybruhin/laravel-service.svg?style=flat-square)](https://packagist.org/packages/sergeybruhin/laravel-service)
 
-Very basic and simple package to show different robots.txt files for different environments. Just create new directory,
-create blade files with environment names.
+This package brings to laravel command to create custom service with service provider and straightforward folder structure.
 
 ## Installation
 
