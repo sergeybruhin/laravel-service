@@ -1,0 +1,10 @@
+<?php
+
+namespace $NAMESPACE$;
+
+use App\Services\$SERVICE_NAME$\Interfaces\$CLASS_NAME$Contract;
+
+class $CLASS_NAME$ implements $CLASS_NAME$Contract
+{
+
+}

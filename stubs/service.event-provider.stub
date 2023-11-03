@@ -1,0 +1,15 @@
+<?php
+
+namespace $NAMESPACE$;
+
+use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
+
+class $CLASS_NAME$ extends ServiceProvider
+{
+    /**
+     * @var array
+     */
+    protected $listen = [
+
+    ];
+}

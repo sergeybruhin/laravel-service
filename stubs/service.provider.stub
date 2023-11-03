@@ -1,0 +1,27 @@
+<?php
+
+namespace $NAMESPACE$;
+
+use App\Services\$SERVICE_NAME$\Facade\$SERVICE_NAME$Service as Facade;
+use App\Services\$SERVICE_NAME$\Interfaces\$SERVICE_NAME$ServiceContract;
+use App\Services\$SERVICE_NAME$\$SERVICE_NAME$Service;
+use Illuminate\Foundation\AliasLoader;
+use Illuminate\Support\ServiceProvider as LaravelServiceProvider;
+
+class $CLASS_NAME$ extends LaravelServiceProvider
+{
+    /**
+     * Register services.
+     *
+     * @return void
+     */
+    public function register(): void
+    {
+        $this->app->singleton($SERVICE_NAME$ServiceContract::class, fn() => resolve($SERVICE_NAME$Service::class));
+
+        $loader = AliasLoader::getInstance();
+        $loader->alias('$SERVICE_NAME$', Facade::class);
+
+        $this->app->register(EventServiceProvider::class);
+    }
+}

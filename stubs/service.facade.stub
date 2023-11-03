@@ -1,0 +1,14 @@
+<?php
+
+namespace $NAMESPACE$;
+
+use Illuminate\Support\Facades\Facade as AppFacade;
+use App\Services\$SERVICE_NAME$\$SERVICE_NAME$Service as Service;
+
+class $CLASS_NAME$ extends AppFacade
+{
+    public static function getFacadeAccessor(): string
+    {
+        return Service::class;
+    }
+}

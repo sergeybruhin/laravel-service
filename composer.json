@@ -1,0 +1,53 @@
+{
+    "name": "sergeybruhin/laravel-service",
+    "description": "Laravel service layer stubs and utils",
+    "keywords": [
+        "sergeybruhin",
+        "larave-service",
+        "laravel"
+    ],
+    "homepage": "https://github.com/sergeybruhin/laravel-service",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Sergey Bruhin",
+            "email": "sundaycreative@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "SergeyBruhin\\LaravelService\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SergeyBruhin\\LaravelService\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SergeyBruhin\\LaravelService\\Providers\\LaravelServiceServiceProvider"
+            ],
+            "aliases": {
+                "LaravelService": "LaravelService\\LaravelService\\Facades\\LaravelService"
+            }
+        }
+    }
+}
