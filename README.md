@@ -3,7 +3,8 @@
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/sergeybruhin/laravel-service.svg?style=flat-square)](https://packagist.org/packages/sergeybruhin/laravel-service)
 [![Total Downloads](https://img.shields.io/packagist/dt/sergeybruhin/laravel-service.svg?style=flat-square)](https://packagist.org/packages/sergeybruhin/laravel-service)
 
-This package brings to laravel command to create custom service with service provider and straightforward folder structure.
+This package brings to laravel command to create custom service with service provider and straightforward folder
+structure.
 
 ## Installation
 
@@ -18,6 +19,15 @@ composer require sergeybruhin/laravel-service
 ```php
 php artisan create:service Delivery
 ```
+
+## ToDo
+
+- [ ] Add ability to create Actions for specific service
+- [ ] Add ability to create Handlers for specific service
+- [ ] Add ability to create Jobs for specific service
+- [ ] Add ability to create Events for specific service
+- [ ] Add ability to create Listeners for specific service
+- [ ] Add ability to create Commands for specific service
 
 ### Testing (Not yet 💁‍♂️)
 
